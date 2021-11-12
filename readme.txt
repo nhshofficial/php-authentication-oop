@@ -1,8 +1,8 @@
---PHP Authentication system with PHP OOP, MySQL, ajax
+-- PHP Authentication system with PHP OOP, MySQL, ajax
 
--A very simple PHP Authentication system includes (registration, login, dashboard, change password, reset password with OTP).
+- A very simple PHP Authentication system includes (registration, login, dashboard, change password, reset password with OTP).
 
---Files and folders
+-- Files and folders
 - assets [contains css, js, image assets]
 - libs [contains external library {PHPMailer}]
 - config.php
@@ -16,19 +16,19 @@
 - reset.php
 
 
---Front-end
+-- Front-end
 - Bootstrap
 - sweetalert js
 - jquery
 - ajax
 
---Back-end
+-- Back-end
 - PHP OOP
 
---Database
+-- Database
 - MySQL
 
---Email
+-- Email
 - PHPMailer library
 
 -- configure:
