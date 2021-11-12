@@ -3,8 +3,8 @@
 - A very simple PHP Authentication system includes (registration, login, dashboard, change password, reset password with OTP).
 
 -- Files and folders
-- assets [contains css, js, image assets]
-- libs [contains external library {PHPMailer}]
+- /assets [contains css, js, image assets]
+- /libs [contains external library {PHPMailer}]
 - config.php
 - conn.php
 - dashboard.php
