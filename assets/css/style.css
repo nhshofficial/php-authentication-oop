@@ -1,0 +1,11 @@
+
+/* ---- Logo tweak ---- */
+.navbar-brand img {
+    max-width: 200px;
+}
+/* ---- BHW btn ---- */
+.btn-bhw {
+    color: #ffffff !important;
+    background-color: #105caa !important;
+    border-color: #105caa !important;
+}
