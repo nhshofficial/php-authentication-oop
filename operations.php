@@ -175,9 +175,9 @@ class dboperations {
          
         //send the message, check for errors
         if (!$mail->send()) {
-            return true;
-        } else {
             return false;
+        } else {
+            return true;
         }
     }
 
@@ -202,9 +202,9 @@ class dboperations {
          
         //send the message, check for errors
         if (!$mail->send()) {
-            return true;
-        } else {
             return false;
+        } else {
+            return true;
         }
     }
 
