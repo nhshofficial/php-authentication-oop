@@ -109,8 +109,12 @@ class dboperations {
         $stmt->bind_param('ss', $randomOtp, $email);
         if($stmt->execute()){
             // sending otp to the user
-            $this->sendOtp($randomOtp, $email);
-            echo json_encode(['status' => 'success']);
+            $exec = $this->sendOtp($randomOtp, $email);
+            if($exec) {
+                echo json_encode(['status' => 'success']);
+            } else {
+                echo json_encode(['status' => 'error']);
+            }
         } else {
             echo json_encode(['status' => 'error']);
         }
@@ -144,8 +148,12 @@ class dboperations {
                 $stmtOtp->execute();
 
                 // sending new password
-                $this->sendPassword($randomPassword, $email);
-                return true;
+                $exec = $this->sendPassword($randomPassword, $email);
+                if($exec) {
+                    return true;
+                } else {
+                    return false;
+                }
             } else {
                 return false;
             }
