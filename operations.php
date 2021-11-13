@@ -72,7 +72,7 @@ class dboperations {
     }  
 
     //get password in md5 format by email
-    public function getUserPasswordByEmail($email){
+    private function getUserPasswordByEmail($email){
         $stmt = $this->con->prepare("SELECT password from users WHERE email = ?");
         $stmt->bind_param("s", $email);
         $stmt->execute();
@@ -121,7 +121,7 @@ class dboperations {
     }
 
     //get DB otp by user's email
-    public function getOtp($email){
+    private function getOtp($email){
         $stmt = $this->con->prepare("SELECT otp from users WHERE email = ?");
         $stmt->bind_param("s", $email);
         $stmt->execute();
@@ -163,7 +163,7 @@ class dboperations {
     }
 
     // mail OTP
-    public function sendOtp($otp, $email) {
+    private function sendOtp($otp, $email) {
 
         $mail = new PHPMailer; //PhP Mailer Instance
         // $mail->SMTPDebug = 3; //Enable SMTP Debugging
@@ -190,7 +190,7 @@ class dboperations {
     }
 
     // mail Password
-    public function sendPassword($newPassword, $email) {
+    private function sendPassword($newPassword, $email) {
 
         $mail = new PHPMailer; //PhP Mailer Instance
         // $mail->SMTPDebug = 3; //Enable SMTP Debugging
